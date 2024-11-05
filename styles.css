@@ -1,0 +1,189 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo laranja claro para a página inicial */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffa726; /* Fundo laranja claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilo para a bolha centralizada na página inicial */
+.bubble-container {
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+/* Título em laranja */
+.title {
+    font-size: 24px;
+    color: #ff6600; /* Cor laranja */
+    margin-bottom: 20px;
+}
+
+/* Estilo para os nomes */
+.names p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Botão de entrada */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #ff6600; /* Laranja */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #cc5200;
+}
+
+/* Estilos para as formas geométricas abstratas na página inicial */
+.shape {
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+
+.shape1 {
+    width: 100px;
+    height: 100px;
+    background-color: #ffb74d;
+    top: 10%;
+    left: 15%;
+}
+
+.shape2 {
+    width: 150px;
+    height: 150px;
+    background-color: #ffcc80;
+    top: 50%;
+    left: 10%;
+    transform: rotate(20deg);
+}
+
+.shape3 {
+    width: 80px;
+    height: 80px;
+    background-color: #ffe0b2;
+    bottom: 15%;
+    right: 20%;
+    transform: rotate(-30deg);
+}
+
+.shape4 {
+    width: 120px;
+    height: 120px;
+    background-color: #ff8a65;
+    top: 20%;
+    right: 10%;
+    transform: rotate(45deg);
+}
+
+.shape5 {
+    width: 100px;
+    height: 100px;
+    background-color: #ff7043;
+    bottom: 20%;
+    left: 25%;
+    transform: rotate(-15deg);
+}
+
+/* Estilos para a página 2 (page2.html) */
+
+/* Container centralizado com sombra */
+.page2-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal da página 2 */
+.page-title {
+    font-size: 2.5rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+/* Layout de conteúdo flexível para imagens e vídeo */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Seção de imagens */
+.images-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo para cada imagem com texto */
+.image-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-text img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.image-text p {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Seção de vídeo */
+.video-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-section video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
